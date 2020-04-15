@@ -23,6 +23,7 @@ namespace RPSLS
 
             player1.ChooseGesture();
             player2.ChooseGesture();
+            
         }
         
 
@@ -58,6 +59,7 @@ namespace RPSLS
             else
             {
                 Console.WriteLine("Try again.  Please type 'single player' or 'double player' to begin playing.");
+                ChooseGameType();
             }
 
          

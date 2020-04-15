@@ -22,6 +22,7 @@ namespace RPSLS
         {
             Console.WriteLine("Select one of the gesture options.");
             choice = Console.ReadLine();
+
             
 
         }

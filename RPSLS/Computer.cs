@@ -21,7 +21,13 @@ namespace RPSLS
         //member methods (Can do)
         public override void ChooseGesture()
         {
-           
+            // generate a random number
+            //user that number to grab a value out of the list of geatures by using that randomly generated number as an index
+            Random rnd = new Random();
+
+            int i = rnd.Next(0, 4);
+
+            choice = gestures[i];
         }
 
 
