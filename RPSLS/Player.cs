@@ -4,63 +4,41 @@ using System.Text;
 
 namespace RPSLS
 {
-    class Player
-    //this class will have a list containing all of the gesture options
+    abstract class Player
+    
 
     //member variables
     {
-        List<string> gestures;
+        public List<string> gestures;
+        public string name;
+        public string choice;
+        public int score;
 
         public Player()
         {
-            List<string> gestures = new List<string>();
+            score = 0;
+            gestures = new List<string>();
             gestures.Add("rock");
             gestures.Add("paper");
             gestures.Add("scissors");
             gestures.Add("lizard");
             gestures.Add("spock");
 
-            Console.WriteLine(gestures);
-
+            
           
         }
 
         //member methods (Can do)
-        public void rockAttack()
-        {
-
-        }
-
-
-        public void paperAttack()
-    {
-
-
-    }
-
-        public void scissorsAttack()
-    {
+        //// One round of game ////
+        // 3) Display gesture options to the players         [PLAYER]
+        // 4) Player 1 chooses gesture                       [PLAYER]
+        // 5) Player 2 chooses gesture                       [PLAYER]
+        // 6) Compare gestures (assign a point to ROUND winner/check for tie!)      [GAME]
+        public abstract void ChooseGesture();
+        
 
 
-    }
-
-
-        public void lizardAttack()
-    {
-
-
-    }
-
-
-        public void spockAttack()
-    {
-
-
-    }
-
-
-
-
+      
     }
 
   
