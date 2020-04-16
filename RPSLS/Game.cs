@@ -23,6 +23,9 @@ namespace RPSLS
 
             player1.ChooseGesture();
             player2.ChooseGesture();
+            CompareGesture();
+
+            //DisplayWinner();
             
         }
         
@@ -65,5 +68,25 @@ namespace RPSLS
          
 
         }
+
+
+        public void CompareGesture()
+        {
+            if (player1.choice == player2.choice)
+            {
+                Console.WriteLine("It was a tie");
+            }
+            else if (player1.choice == "rock" && (player2.choice == "scissors" || player2.choice == "lizard"))
+            {
+                Console.WriteLine(player1.name + " won the round");
+                player1.score++;
+            }
+
+        }
+
+
+
     }
+
+
 }
