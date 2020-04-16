@@ -21,13 +21,21 @@ namespace RPSLS
             DisplayRules();
             ChooseGameType();
 
-            player1.ChooseGesture();
-            player2.ChooseGesture();
-            CompareGesture();
-
-            //DisplayWinner();
+            while (player1.score < 3 || (player2.score < 3));
+            {
+                player1.ChooseGesture();
+                player2.ChooseGesture();
+                CompareGesture();
+            }
             
+
+           //  public string DisplayGestures()
+            
+            
+
         }
+
+
         
 
         public void DisplayRules()
@@ -81,6 +89,56 @@ namespace RPSLS
                 Console.WriteLine(player1.name + " won the round");
                 player1.score++;
             }
+            else if ((player1.choice == "paper" && (player2.choice == "rock" || player2.choice == "spock")))
+            {
+                Console.WriteLine(player1.name + "won the round");
+                player1.score++;
+            }
+            else if ((player1.choice == "scissors" && (player2.choice == "paper" || player2.choice == "lizard")))
+            {
+                Console.WriteLine(player1.name + "won the round");
+                player1.score++;
+            }
+            else if ((player1.choice == "lizard" && (player2.choice == "paper" || player2.choice == "spock")))
+            {
+                Console.WriteLine(player1.name + "won the round");
+                player1.score++;
+            }
+            else if ((player1.choice == "spock" && (player2.choice == "rock" || player2.choice == "scissors")))
+            {
+                Console.WriteLine(player1.name + "won the round");
+                player1.score++;
+            }
+
+
+
+            else if (player2.choice == "rock" && (player1.choice == "scissors" || player1.choice == "lizard"))
+            {
+                Console.WriteLine(player2.name + " won the round");
+                player2.score++;
+            }
+            else if ((player2.choice == "paper" && (player1.choice == "rock" || player1.choice == "spock")))
+            {
+                Console.WriteLine(player2.name + "won the round");
+                player2.score++;
+            }
+            else if ((player2.choice == "scissors" && (player1.choice == "paper" || player1.choice == "lizard")))
+            {
+                Console.WriteLine(player1.name + "won the round");
+                player2.score++;
+            }
+            else if ((player2.choice == "lizard" && (player1.choice == "paper" || player1.choice == "spock")))
+            {
+                Console.WriteLine(player1.name + "won the round");
+                player2.score++;
+            }
+            else if ((player2.choice == "spock" && (player1.choice == "rock" || player1.choice == "scissors")))
+            {
+                Console.WriteLine(player1.name + "won the round");
+                player2.score++;
+            }
+
+
 
         }
 

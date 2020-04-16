@@ -20,24 +20,15 @@ namespace RPSLS
         //member methods (Can do)
         public override void ChooseGesture()
         {
-            Console.WriteLine("Select one of the gesture options.");
-            choice = Console.ReadLine();
-
             foreach (string gestures in gestures)
             {
                 Console.WriteLine(gestures);
             }
 
             string userInput = Console.ReadLine();
-            if(userInput == "rock")
-            {
-            
-            }
 
-
-
-
-
+            Console.WriteLine("Select one of the gesture options.");
+            choice = Console.ReadLine();
         }
         public void SetName()
         {
