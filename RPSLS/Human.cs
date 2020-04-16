@@ -21,9 +21,21 @@ namespace RPSLS
         public override void ChooseGesture()
         {
             Console.WriteLine("Select one of the gesture options.");
-            choice = Console.ReadLine();
 
-            
+            foreach (string gestures in gestures)
+            {
+                Console.WriteLine(gestures);
+            }
+
+            //choice = Console.ReadLine();
+
+            //Console.WriteLine(gestures[1, 4]);
+
+            //choice = gestures[0];
+
+
+
+
 
         }
         public void SetName()

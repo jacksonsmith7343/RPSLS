@@ -35,8 +35,6 @@ namespace RPSLS
         // 5) Player 2 chooses gesture                       [PLAYER]
         // 6) Compare gestures (assign a point to ROUND winner/check for tie!)      [GAME]
         public abstract void ChooseGesture();
-        
-
 
       
     }
