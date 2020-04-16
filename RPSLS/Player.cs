@@ -23,9 +23,7 @@ namespace RPSLS
             gestures.Add("scissors");
             gestures.Add("lizard");
             gestures.Add("spock");
-
-            
-          
+  
         }
 
         //member methods (Can do)

@@ -27,7 +27,8 @@ namespace RPSLS
 
             string userInput = Console.ReadLine();
 
-            Console.WriteLine("Select one of the gesture options.");
+            
+           Console.WriteLine("Select one of the gesture options.");
             choice = Console.ReadLine();
         }
         public void SetName()
@@ -36,8 +37,5 @@ namespace RPSLS
             name = Console.ReadLine();
         }
 
-        //play a game with a computer
-        //play a game with another human
-        //chose a gesture to play from a list
     }
 }
