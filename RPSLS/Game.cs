@@ -29,7 +29,7 @@ namespace RPSLS
                 DisplayWinner();
             }
 
-            
+           
         }
         public void DisplayWinner()
         {
@@ -68,7 +68,6 @@ namespace RPSLS
 
             if (userInput == "single player")
             {
-                //human vs computer
                 player2 = new Computer();
             }
             else if (userInput == "double player")
@@ -88,6 +87,7 @@ namespace RPSLS
 
         public void CompareGesture()
         {
+           
             if (player1.choice == player2.choice)
             {
                 Console.WriteLine("It was a tie");
@@ -118,8 +118,6 @@ namespace RPSLS
                 player1.score++;
             }
 
-
-
             else if (player2.choice == "rock" && (player1.choice == "scissors" || player1.choice == "lizard"))
             {
                 Console.WriteLine(player2.name + " won the round");
@@ -145,11 +143,7 @@ namespace RPSLS
                 Console.WriteLine(player1.name + "won the round");
                 player2.score++;
             }
-            else
-            {
-                Console.WriteLine("Try again.  Please type 'single player' or 'double player' to begin playing.");
-                ChooseGameType();
-            }
+            
 
 
 

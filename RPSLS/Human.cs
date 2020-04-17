@@ -6,30 +6,49 @@ namespace RPSLS
 {
     class Human : Player
     {
-        //member variables (Has A)
-
-
-
-        //Constructor (Spawner)
+        
         public Human()
         {
             SetName();
         }
 
 
-        //member methods (Can do)
+        
         public override void ChooseGesture()
         {
-            foreach (string gestures in gestures)
-            {
-                Console.WriteLine(gestures);
-            }
+            Console.WriteLine("Select one of the gesture options.");
+            Console.WriteLine("rock  paper  scissor  lizard  spock");
 
-            string userInput = Console.ReadLine();
+            choice = Console.ReadLine();
+
+         switch (choice)
+            {
+                case "rock":
+
+                    break;
+                case "paper":
+
+                    break;
+                case "scissors":
+
+                    break;
+                case "lizard":
+
+                    break;
+                case "spock":
+                default:
+                    Console.WriteLine("Not a valid gesture option. Select again.");
+                    break;
+            }
+             
+            
+      
+
+
 
             
-           Console.WriteLine("Select one of the gesture options.");
-            choice = Console.ReadLine();
+
+            
         }
         public void SetName()
         {
