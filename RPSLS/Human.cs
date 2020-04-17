@@ -22,7 +22,7 @@ namespace RPSLS
             choice = Console.ReadLine();
 
          switch (choice)
-            {
+         {
                 case "rock":
 
                     break;
@@ -39,15 +39,7 @@ namespace RPSLS
                 default:
                     Console.WriteLine("Not a valid gesture option. Select again.");
                     break;
-            }
-             
-            
-      
-
-
-
-            
-
+         }
             
         }
         public void SetName()
